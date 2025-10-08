@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const express = require('express'); //commonjs
 const cors = require('cors');
+
 const configViewEngine = require('./config/viewEngine');
 const apiRoutes = require('./routes/api');
 const connection = require('./config/database');
@@ -28,7 +29,7 @@ app.use('/v1/api/', apiRoutes);
 (async () => {
     try {
         //using mongoose
-        // await connection();
+        await connection();
 
         app.listen(port, () => {
             console.log(`Backend Nodejs App listening on port ${port}`)

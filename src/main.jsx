@@ -7,6 +7,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import UserPage from './pages/user.jsx'
 import HomePage from './pages/home.jsx'
+import LoginPage from './pages/login.jsx'
 import { ConfigProvider, App as AntdApp } from 'antd'
 
 const router = createBrowserRouter([
